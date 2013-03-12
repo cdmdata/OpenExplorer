@@ -1,0 +1,10 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item/>
+    <item>
+        <bitmap
+            android:gravity="bottom"
+            android:src="@drawable/divider_horizontal_bright" />
+    </item>
+
+</layer-list>

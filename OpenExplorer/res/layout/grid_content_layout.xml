@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Open Explorer, an open source file explorer & text editor
+    Copyright (C) 2011 Brandon Bowles <brandroid64@gmail.com>
+	
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical" >
+
+    <org.brandroid.openmanager.views.RemoteImageView
+        android:id="@+id/content_icon"
+        style="@style/icon.grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right"
+        android:scaleType="fitCenter"
+        android:src="@drawable/lg_folder_full" />
+
+    <TextView
+        android:id="@+id/content_text"
+        style="@style/Text.Small"
+        android:layout_width="match_parent"
+        android:layout_alignBottom="@+id/content_icon"
+        android:layout_margin="5dp"
+        android:alpha="0.5"
+        android:background="@color/translucent_gray"
+        android:ellipsize="none"
+        android:gravity="bottom|center_horizontal" />
+
+</RelativeLayout>

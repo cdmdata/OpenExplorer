@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="?attr/appBackgroundColorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/Text.Small"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/s_about_version" />
+
+                    <TextView
+                        android:id="@+id/about_version"
+                        style="@style/Text.Mid"
+                        android:layout_weight="4"
+                        android:gravity="left"
+                        android:text="@string/app_name" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/Text.Small"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/s_about_screensize" />
+
+                    <TextView
+                        style="@style/Text.Mid"
+                        android:layout_weight="4"
+                        android:gravity="left"
+                        android:text="@string/screen_size" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/Text.Small"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/s_about_density" />
+
+                    <TextView
+                        style="@style/Text.Mid"
+                        android:layout_weight="4"
+                        android:gravity="left"
+                        android:text="@string/screen_density" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row_buildtime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/Text.Small"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/s_about_buildtime" />
+
+                    <TextView
+                        android:id="@+id/about_buildtime"
+                        style="@style/Text.Mid"
+                        android:layout_weight="4"
+                        android:gravity="left"
+                        android:text="@string/s_about_buildtime" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/Text.Small"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/s_about_author" />
+
+                    <TextView
+                        style="@style/Text.Mid"
+                        android:layout_weight="4"
+                        android:gravity="left"
+                        android:text="Brandon Bowles (US)" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/Text.Small"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/s_about_email" />
+
+                    <TextView
+                        android:id="@+id/about_email"
+                        style="@style/Text.Mid"
+                        android:layout_weight="4"
+                        android:clickable="true"
+                        android:gravity="left"
+                        android:text="Brandroid64@gmail.com" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/Text.Small"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="@string/s_about_site" />
+
+                    <TextView
+                        android:id="@+id/about_site"
+                        style="@style/Text.Mid"
+                        android:layout_weight="4"
+                        android:clickable="true"
+                        android:gravity="left"
+                        android:text="brandroid.org" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/about_email_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="@string/s_about_email"
+                    android:textAppearance="@style/Text.Mid" />
+
+                <Button
+                    android:id="@+id/about_site_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:text="@string/s_view"
+                    android:textAppearance="@style/Text.Mid" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_recent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/s_about_recent" />
+
+            <Button
+                android:id="@+id/btn_hardware"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/s_about_hardware" />
+
+            <Button
+                android:id="@+id/btn_shortcuts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shortcuts" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/about_recent_status_label"
+                    style="@style/Text.Small"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="@string/s_about_recent" />
+
+                <TextView
+                    android:id="@+id/about_recent_status"
+                    style="@style/Text.Mid"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:gravity="left"
+                    android:text="@string/s_status_loading" />
+            </LinearLayout>
+
+            <WebView
+                android:id="@+id/about_recent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/about_hardware"
+                style="@style/Text.Mid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|top"
+            android:gravity="center|top"
+            android:visibility="visible" >
+
+            <TableLayout
+                android:id="@+id/shortcuts_table"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

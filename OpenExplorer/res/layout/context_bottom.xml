@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+	android:minHeight="40dp"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    >
+
+    
+    <LinearLayout
+        android:background="?attr/popupBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="vertical"
+        > 
+        
+	    <ViewStub
+	        android:layout="@layout/popup_title"
+	        android:id="@+id/contextmenu_title_stub"
+	        android:inflatedId="@+id/contextmenu_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+			/>
+
+	
+	    <FrameLayout
+	        android:id="@android:id/widget_frame"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" 
+		    android:minHeight="40dp"
+	        />
+	    
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/indicator_line"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="@dimen/context_bottom_fix"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" >
+
+        <View android:layout_gravity="top"
+			android:layout_height="@dimen/context_indicator_line_width"
+			android:layout_width="20dp"
+			android:id="@+id/space_left"
+			android:alpha="0.95"
+			android:background="@android:color/white"
+			android:visibility="invisible"
+			/>
+        
+        <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="matrix"
+            android:src="@drawable/contextmenu_arrow_down" />
+        
+        
+        <View android:layout_gravity="top"
+			android:layout_height="@dimen/context_indicator_line_width"
+			android:layout_width="fill_parent"
+			android:id="@+id/space_right"
+			android:alpha="0.95"
+			android:background="@android:color/white"
+			android:visibility="invisible"
+			/>
+        
+    </LinearLayout>
+
+</LinearLayout>

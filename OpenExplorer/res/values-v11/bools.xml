@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="honeycomb" type="bool">true</item>
+    <item name="prehoneycomb" type="bool">false</item>
+
+</resources>
